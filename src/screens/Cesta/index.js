@@ -4,11 +4,11 @@ import Topo from './componentes/Topo'
 import Detalhes from './componentes/Detalhes'
 import { View, StyleSheet } from 'react-native'
 
-export default function Cesta() {
+export default function Cesta({topo, detalhes} ) {
     return <>
-        <Topo/>
+        <Topo {...topo} />
         <View style={estilos.cesta}>
-            <Detalhes/>
+            <Detalhes {...detalhes} />
         </View>
     </>
 }

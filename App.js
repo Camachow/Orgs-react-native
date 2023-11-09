@@ -4,8 +4,9 @@ import {
   Montserrat_400Regular, 
   Montserrat_700Bold 
 } from '@expo-google-fonts/montserrat';
-import Cesta from './src/screens/Cesta'
 
+import Cesta from './src/screens/Cesta'
+import mockCesta from './src/mocks/cesta'
 
 export default function App() {
 
@@ -21,7 +22,7 @@ export default function App() {
   return (
     <SafeAreaView>
       <StatusBar/>
-      <Cesta/>
+      <Cesta {...mockCesta} />
     </SafeAreaView>
   );
 }
